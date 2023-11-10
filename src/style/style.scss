@@ -1,0 +1,30 @@
+@import "./template.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bluecolor;
+}
+
+.container {
+  width: 75%;
+  margin: 30px auto;
+  background-color: $beigecolor;
+  .task-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 5px;
+    .task:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .task {
+      display: flex;
+      justify-content: space-around;
+      background-color: $bluecolor;
+    }
+  }
+}
