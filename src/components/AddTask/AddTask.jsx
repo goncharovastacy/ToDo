@@ -1,5 +1,10 @@
 function AddTask() {
-    return ( <div><input type="text"/><button>Add task</button></div> );
+  return (
+    <div className="add-task-container">
+      <input type="text" />
+      <button>Добавить задачу</button>
+    </div>
+  );
 }
 
 export default AddTask;
