@@ -2,6 +2,7 @@ import Task from "./components/Task/Task";
 import AddTask from "./components/AddTask/AddTask";
 import "./style/style.scss";
 import Registration from "./components/Registration/Registration";
+import LogIn from "./components/LogIn/LogIn";
 
 function App() {
   const tasks = ["сделать что-то", "еще что-то сделать"];
