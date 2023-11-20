@@ -1,5 +1,11 @@
-$greencolor: #2E958C;
-$bluecolor: #99D0D3;
-$beigecolor: #FCE0D5;
-$greycolor: #C8C3C9;
-$violetcolor: #B47EB2;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap");
+
+$greencolor: #2e958c;
+$bluecolor: #99d0d3;
+$beigecolor: #fce0d5;
+$greycolor: #c8c3c9;
+$violetcolor: #b47eb2;
+
+@mixin font {
+  font-family: "Noto Sans", sans-serif;
+}
