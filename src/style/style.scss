@@ -31,21 +31,6 @@ body {
   .button-disabled {
     cursor: not-allowed;
   }
-  .registration-container,
-  .log-in-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px 5px;
-    input {
-      height: 30px;
-    }
-    button {
-      margin: 10px 0;
-    }
-  }
   .add-task-container {
     padding-top: 20px;
     display: flex;
@@ -62,6 +47,12 @@ body {
     .task:not(:last-child) {
       margin-bottom: 20px;
     }
+    p {
+      @include font;
+      font-size: 20px;
+      text-align: center;
+      color: $greencolor;
+    }
     .task {
       padding: 5px 40px;
       display: flex;
@@ -77,8 +68,5 @@ body {
         width: 18px;
       }
     }
-  }
-  .span-validate {
-    color: red;
   }
 }

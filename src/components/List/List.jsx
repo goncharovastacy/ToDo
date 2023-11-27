@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import Task from "../../components/Task/Task";
-import AddTask from "../../components/AddTask/AddTask";
+import Task from "../Task/Task";
+import AddTask from "../AddTask/AddTask";
 
 function List() {
   const tasks = useSelector((state) => state);
@@ -8,9 +8,11 @@ function List() {
     <div className="container">
       <AddTask />
       <div className="task-container">
-        {tasks.map((el) => (
-          <Task task={el.task} />
-        ))}
+        {tasks.length !== 0 ? (
+          tasks.map((el) => <Task task={el.task} key={el.id} id={el.id} />)
+        ) : (
+          <p>Задач нет</p>
+        )}
       </div>
     </div>
   );

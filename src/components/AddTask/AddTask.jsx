@@ -9,7 +9,9 @@ function AddTask() {
     setTask(e.target.value);
   };
   const addTask = () => {
-    dispatch(addNewTask({ task: task }));
+    dispatch(
+      addNewTask({ task: task, id: Math.floor(Math.random() * 1000000) })
+    );
     setTask("");
   };
   return (
